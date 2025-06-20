@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Amigos Peludos - Gatos y Perros</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf6ec; /* beige claro */
+      color: #4b3b2a; /* café oscuro */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #d9b99b; /* café claro */
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    nav {
+      margin-top: 12px;
+    }
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #4b3b2a;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #bfa67a; /* tono café más oscuro */
+      color: white;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px 60px 20px;
+    }
+    section {
+      margin-bottom: 60px;
+      background-color: #f9f2e7; /* beige muy claro */
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(180,140,80,0.15);
+    }
+    h2 {
+      border-bottom: 2px solid #d9b99b;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: #705432;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    ul {
+      list-style: inside disc;
+      line-height: 1.6;
+      font-size: 1.1rem;
+      padding-left: 0;
+    }
+    /* Galería imágenes */
+    .galeria {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .galeria img {
+      max-width: 45%;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+      object-fit: cover;
+      height: 250px;
+    }
+    /* Video */
+    .video iframe {
+      width: 100%;
+      height: 315px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      border: none;
+    }
+    /* Footer */
+    footer {
+      background-color: #d9b99b;
+      padding: 15px;
+      text-align: center;
+      font-weight: 600;
+      color: #4b3b2a;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+    /* Responsive */
+    @media (max-width: 700px) {
+      .galeria img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Amigos Peludos</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#higiene">Higiene</a>
+    <a href="#gastos">Gastos</a>
+    <a href="#atencion">Atención</a>
+    <a href="#recomendaciones">Recomendaciones</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Página principal -->
+  <section id="inicio">
+    <h2>Bienvenidos a Amigos Peludos</h2>
+    <p>
+      Los gatos y perros son compañeros leales que nos brindan amor, alegría y compañía.
+      Aquí encontrarás todo lo necesario para cuidarlos bien, desde higiene, atención veterinaria,
+      hasta recomendaciones para su bienestar y gastos que debes tener en cuenta.
+    </p>
+
+    <div class="galeria">
+      <img src="https://images.app.goo.gl/mbD7mutGzUCSJW41A" alt="Perro feliz">
+      <img src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg" alt="Gato mirando">
+    </div>
+
+    <div class="video">
+      
+	  
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/ii8rst2xyk8?si=Y-ceyt2qYSWw_dRB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+     
+    </div>
+  </section>
+
+  <!-- Higiene -->
+  <section id="higiene">
+    <h2>Higiene para gatos y perros</h2>
+    <p>La higiene es fundamental para mantener a tus mascotas saludables y felices.</p>
+    <ul>
+      <li>Baños regulares usando productos específicos para perros o gatos.</li>
+      <li>Cepillado frecuente para evitar enredos y eliminar pelo muerto.</li>
+      <li>Limpieza de oídos para prevenir infecciones.</li>
+      <li>Cuidado dental: cepilla sus dientes o usa productos recomendados.</li>
+      <li>Corte y revisión de uñas para evitar molestias y daños.</li>
+    </ul>
+  </section>
+
+  <!-- Gastos -->
+  <section id="gastos">
+    <h2>Gastos comunes con mascotas</h2>
+    <p>Al tener un perro o gato, es importante planificar los gastos para su bienestar.</p>
+    <ul>
+      <li>Alimentos balanceados y de calidad.</li>
+      <li>Visitas veterinarias periódicas y vacunas.</li>
+      <li>Artículos de higiene: shampoo, cepillos, cortaúñas.</li>
+      <li>Juguetes y accesorios para estimular su actividad.</li>
+      <li>Emergencias médicas o tratamientos especiales.</li>
+    </ul>
+  </section>
+
+  <!-- Atención -->
+  <section id="atencion">
+    <h2>Atención de gatos y perros</h2>
+    <p>Una buena atención implica observar y responder a las necesidades de tu mascota:</p>
+    <ul>
+      <li>Proporciona un espacio cómodo y seguro para descansar.</li>
+      <li>Dedica tiempo diario a jugar y socializar con ellos.</li>
+      <li>Observa signos de enfermedad o cambios de comportamiento.</li>
+      <li>Consulta al veterinario ante cualquier duda o problema.</li>
+      <li>Ofrece agua fresca y comida adecuada según su edad y tamaño.</li>
+    </ul>
+  </section>
+
+  <!-- Recomendaciones -->
+  <section id="recomendaciones">
+    <h2>Recomendaciones y cuidados</h2>
+    <p>Para asegurar una vida larga y feliz para tus mascotas, considera:</p>
+    <ul>
+      <li>Vacunación completa y desparasitación regular.</li>
+      <li>Ejercicio diario para mantenerlos activos y saludables.</li>
+      <li>Atención emocional: cariño y compañía constante.</li>
+      <li>Adapta su alimentación a sus necesidades específicas.</li>
+      <li>Consulta siempre con especialistas para dudas o emergencias.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 Amigos Peludos. Todos los derechos reservados.
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Formulario de Perros y Gatos</title>
+</head>
+<body>
+  <h1>Formulario sobre Perros y Gatos</h1>
+
+  <iframe
+    src="https://docs.google.com/forms/d/e/1FAIpQLSf_6-Ctxs2qJu-l0AsDR01Hl9jNXinPY1xT8CPKUAe6vSgqbg/viewform?usp=dialog"
+    width="640"
+    height="800"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0"
+    >
+    Cargando…
+  </iframe>
+
+</body>
+</html>
+<!-- Recomendaciones -->
+<section id="recomendaciones">
+  <h2>Recomendaciones y cuidados</h2>
+  <p>Para asegurar una vida larga y feliz para tus mascotas, considera:</p>
+  <ul>
+    <li>Vacunación completa y desparasitación regular.</li>
+    <li>Ejercicio diario para mantenerlos activos y saludables.</li>
+    <li>Atención emocional: cariño y compañía constante.</li>
+    <li>Adapta su alimentación a sus necesidades específicas.</li>
+    <li>Consulta siempre con especialistas para dudas o emergencias.</li>
+  </ul>
+
+  <!-- Tabla comparativa -->
+  <h3 style="margin-top: 30px;">Comparativa de cuidados entre gatos y perros</h3>
+  <table style="width:100%; border-collapse: collapse; margin-top: 20px; background-color: #fffaf3; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <thead style="background-color: #d9b99b; color: #4b3b2a;">
+      <tr>
+        <th style="padding: 12px; border: 1px solid #ccb089;">Aspecto</th>
+        <th style="padding: 12px; border: 1px solid #ccb089;">Perros</th>
+        <th style="padding: 12px; border: 1px solid #ccb089;">Gatos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding: 10px; border: 1px solid #e0d6c8;">Ejercicio</td>
+        <td style="padding: 10px; border: 1px solid #e0d6c8;">Necesitan paseos diarios y juegos activos.</td>
+        <td style="padding: 10px; border: 1px solid #e0d6c8;">Se ejercitan en casa, necesitan juguetes y estimulación.</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border: 1px solid #e0d6c8;">Higiene</td>
+        <td style="padding: 10px; border: 1px solid #e0d6c8;">Baños frecuentes y limpieza de patas después del paseo.</td>
+        <td style="padding: 10px; border: 1px solid #e0d6c8;">Se acicalan solos, pero necesitan cepillado regular.</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border: 1px solid #e0d6c8;">Alimentación</td>
+        <td style="padding: 10px; border: 1px solid #e0d6c8;">2-3 comidas al día según tamaño y edad.</td>
+        <td style="padding: 10px; border: 1px solid #e0d6c8;">Porciones más pequeñas, 2 veces al día en general.</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px; border: 1px solid #e0d6c8;">Independencia</td>
+        <td style="padding: 10px; border: 1px solid #e0d6c8;">Requieren compañía constante y atención frecuente.</td>
+        <td style="padding: 10px; border: 1px solid #e0d6c8;">Son más independientes y pueden estar solos por más tiempo.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
